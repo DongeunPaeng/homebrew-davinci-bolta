@@ -4,12 +4,9 @@
 
 ## 설치
 
-이 비공개 저장소에 대한 접근 권한이 있는 GitHub 계정으로 로그인한 뒤 설치하세요.
+Homebrew로 설치한 뒤 처음 실행할 때 별도로 전달받은 API 키를 입력하세요. GitHub 로그인은 필요하지 않습니다.
 
 ```sh
-brew install gh
-gh auth login
-gh auth setup-git
 brew install DongeunPaeng/davinci-bolta/davinci-bolta
 davinci-bolta
 ```
