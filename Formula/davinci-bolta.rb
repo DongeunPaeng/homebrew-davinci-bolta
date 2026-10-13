@@ -1,9 +1,9 @@
 class DavinciBolta < Formula
   desc "Interactive Bolta tax invoice CLI with multiple companies"
   homepage "https://github.com/DongeunPaeng/homebrew-tap"
-  url "https://github.com/DongeunPaeng/homebrew-tap/releases/download/v3.4.0/davinci-bolta-3.4.0-macos-universal.tar.gz"
-  version "3.4.0"
-  sha256 "af0b6b87398e1dd049a6d1f139e15749c05ad7e8dda8fe43d3b834c710853e9b"
+  url "https://github.com/DongeunPaeng/homebrew-tap/releases/download/v3.5.0/davinci-bolta-3.5.0-macos-universal.tar.gz"
+  version "3.5.0"
+  sha256 "df4dc08a00193e2eb732bf0aeadc9bcaf6d00f39554fc5a6a4b3779317a99eda"
   license :cannot_represent
 
   depends_on :macos
@@ -26,7 +26,7 @@ class DavinciBolta < Formula
   end
 
   test do
-    assert_match "davinci-bolta 3.4.0", shell_output("#{bin}/davinci-bolta --version")
+    assert_match "davinci-bolta 3.5.0", shell_output("#{bin}/davinci-bolta --version")
     assert_match "configure", shell_output("#{bin}/davinci-bolta --help")
     assert_match "davinci-configure [OPTIONS]", shell_output("#{bin}/davinci-configure --help")
   end
