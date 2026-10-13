@@ -7,7 +7,7 @@
 Homebrew로 설치한 뒤 처음 실행할 때 별도로 전달받은 API 키를 입력하세요. GitHub 로그인은 필요하지 않습니다.
 
 ```sh
-brew install DongeunPaeng/davinci-bolta/davinci-bolta
+brew install DongeunPaeng/tap/davinci-bolta
 davinci-bolta
 ```
 
