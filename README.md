@@ -37,3 +37,10 @@ brew upgrade davinci-bolta
 ```
 
 실행 파일은 Developer ID Application 인증서로 서명했습니다. 현재 Apple 공증은 적용하지 않았습니다.
+
+이전 설치에서 새 저장소로 바꾸려면 아래 명령을 사용하세요. 고객 정보, API 키와 발행 기록은 유지됩니다.
+
+```sh
+brew uninstall davinci-bolta
+brew install DongeunPaeng/tap/davinci-bolta
+```
