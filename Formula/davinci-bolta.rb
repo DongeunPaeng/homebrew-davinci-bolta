@@ -1,0 +1,26 @@
+class DavinciBolta < Formula
+  desc "Tax invoice CLI for Da Vinci Corp"
+  homepage "https://github.com/DongeunPaeng/homebrew-davinci-bolta"
+  url "https://github.com/DongeunPaeng/homebrew-davinci-bolta.git", tag: "v3.1.0"
+  version "3.1.0"
+  license :cannot_represent
+
+  depends_on macos: :big_sur
+
+  def install
+    bin.install "Release/bolta" => "davinci-bolta"
+    doc.install "README.md"
+  end
+
+  def caveats
+    <<~EOS
+      Run davinci-bolta and enter the separately shared API key once.
+      Configuration and invoice history stay in ~/.local/share/bolta-cli.
+    EOS
+  end
+
+  test do
+    assert_match "davinci-bolta 3.1.0", shell_output("#{bin}/davinci-bolta --version")
+    assert_match "configure", shell_output("#{bin}/davinci-bolta --help")
+  end
+end
