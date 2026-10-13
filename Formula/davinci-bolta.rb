@@ -2,12 +2,12 @@ class DavinciBolta < Formula
   desc "Tax invoice CLI for Da Vinci Corp"
   homepage "https://github.com/DongeunPaeng/homebrew-davinci-bolta"
   url "https://github.com/DongeunPaeng/homebrew-davinci-bolta.git",
-      tag: "v3.1.0",
+      tag:      "v3.1.0",
       revision: "94e3f305c638cd9a52353f8d141f97d42abb7fb3"
   version "3.1.0"
   license :cannot_represent
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   def install
     bin.install "Release/bolta" => "davinci-bolta"
